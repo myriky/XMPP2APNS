@@ -15,28 +15,28 @@ Openfire(WildFire) 에서 발생하는 Message 태그를 APNS(Apple Push Notific
 ## 요청방법
 
 #### 디바이스 토큰 등록하기
-	<iq type="set" to="sds.co.kr" id="apns68057d6a">
+	<iq type="set" to="OPENFIRE_SERVER" id="apns68057d6a">
 	<query xmlns="urn:xmpp:apns">
-	<token>8A67BCCA710233A31406E9399A343A251F79EAC756C83D3A98AC0FA224FBC597</token>
+	<token>XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX</token>
 	</query>
 	</iq>
 
 ### 리턴 값
-	<iq type="result" id="apns68057d6a" from="210.205.58.23" to="user@210.205.58.23/68057d6a">
+	<iq type="result" id="OPENFIRE_SERVER" from="210.205.58.23" to="user@OPENFIRE_SERVER/68057d6a">
 	<query xmlns="urn:xmpp:apns">
-	<token>8A67BCCA710233A31406E9399A343A251F79EAC756C83D3A98AC0FA224FBC597</token>
+	<token>XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX</token>
 	</query>
 	</iq>
 	
 ### 디바이스 토큰 가져오기
-	<iq type="get" to="210.205.58.23" id="apns68057d6a">
+	<iq type="get" to="OPENFIRE_SERVER" id="apns68057d6a">
        		<query xmlns="urn:xmpp:apns"/>
 	</iq>
 
 ### 리턴 값
-	<iq type="result" id="apns68057d6a" from="sds.co.kr" to="user@sds.co.kr/68057d6a">
+	<iq type="result" id="apns68057d6a" from="OPENFIRE_SERVER" to="user@OPENFIRE_SERVER/68057d6a">
 	<query xmlns="urn:xmpp:apns">
-	<token>8A67BCCA710233A31406E9399A343A251F79EAC756C83D3A98AC0FA224FBC597</token>
+	<token>XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX</token>
 	</query>
 	</iq>
 
