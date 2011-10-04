@@ -1,6 +1,7 @@
 # XMPP2APNS
 
 Openfire(WildFire) 에서 발생하는 Message 태그를 APNS(Apple Push Notification Server)으로 포워딩하는 플러그인입니다.
+
 해당 타겟(targetJID)으로 향하는 모든 메시지 스탠자를 검사하여 OpenFire DB안에 별도로 생성된 ofAPNS 테이블을 검사하여, 해당 사용자의 UDID를 통해 APNS로 푸쉬 메시지 발송을 요청합니다.
 
 ## 설치방법
@@ -42,4 +43,5 @@ Openfire(WildFire) 에서 발생하는 Message 태그를 APNS(Apple Push Notific
 ## 참고사항
 
 Openfire에서 APNS로 요청하는 모듈은 ( 'Javapns' http://code.google.com/p/javapns/ ) 를 이용하였습니다.
+
 Openfire 플러그인을 컴파일 해서 jar 패키지로 만드는 방법은 ( http://community.igniterealtime.org/docs/DOC-1020 ) 을 참고하세요.
